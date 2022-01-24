@@ -4,7 +4,7 @@ const User = require("../models/User");
 
 
 
-const validarJWT = (req = request , res = response, next) => {
+const validarJWT = async (req = request , res = response, next) => {
     const token = req.header('x-token')
 
     if (!token) {

@@ -1,5 +1,6 @@
 const { response, request } = require("express");
 const Movie = require("../models/Movie");
+const User = require("../models/User");
 
 const createMovie = async (req = request, res = response) => {
   const { title, description, gender, image } = req.body;

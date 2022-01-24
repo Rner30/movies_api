@@ -1,5 +1,6 @@
 const { Router } = require("express")
-const { changePassowrd, changeEmail, loginUser, createUser } = require("../controllers/user_Controller")
+const { check } = require("express-validator")
+const { changePassowrd, changeEmail, loginUser, createUser, deleteUser } = require("../controllers/user_Controller")
 const validarJWT = require("../middleware/validar-jwt")
 const validateFields = require("../middleware/validateFields")
 
